@@ -3,9 +3,9 @@ import './App.css'
 function App() {
   return (
     <main>
-      <h1>Your Name</h1>
+      <h1>Veronica Rine</h1>
 
-      <h2>Senior Capstone Production Platform</h2>
+      <h2>Senior Capstone Production Platform Page Test</h2>
 
       <p>
         This site will present my software projects, engineering decisions,
