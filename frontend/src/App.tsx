@@ -1,6 +1,19 @@
 import icon from "./assets/icon.png";
 
+  type ReportKind = 'bug' | 'feature'
+  type Report = {
+    id: string
+    text: string
+    kind: ReportKind
+  }
+
 function App() {
+  const sampleReport: Report = {
+  id: '1',
+  text: 'Navigation link is broken',
+  kind: 'bug',
+  }
+
   return (
     <main
       style={{
@@ -12,6 +25,7 @@ function App() {
         padding: '2rem',
       }}
     >
+
       <section
         style={{
           backgroundColor: 'white',
@@ -48,6 +62,12 @@ function App() {
         />
 
       </section>
+      
+      <section className="report-board">
+      <h2>Bugs & Feature Requests</h2>
+      <p>{sampleReport.text} ({sampleReport.kind})</p>
+      </section>
+
     </main>
   );
 }
